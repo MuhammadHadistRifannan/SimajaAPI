@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WEB\\web-api-serve\\SimajaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|d:\\web\\web-api-serve\\simajaapi\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|solutionrelative:controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|d:\\web\\web-api-serve\\simajaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|d:\\web\\web-api-serve\\simajaapi\\helper\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|solutionrelative:helper\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|d:\\web\\web-api-serve\\simajaapi\\simajaapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|solutionrelative:simajaapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|d:\\web\\web-api-serve\\simajaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{758D2916-AEBE-4E52-97AE-18031DD5819E}|SimajaAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtTokenHelper.cs",
+              "DocumentMoniker": "D:\\WEB\\web-api-serve\\SimajaAPI\\Helper\\JwtTokenHelper.cs",
+              "RelativeDocumentMoniker": "Helper\\JwtTokenHelper.cs",
+              "ToolTip": "D:\\WEB\\web-api-serve\\SimajaAPI\\Helper\\JwtTokenHelper.cs",
+              "RelativeToolTip": "Helper\\JwtTokenHelper.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:38:43.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SimajaAPI.http",
+              "DocumentMoniker": "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.http",
+              "RelativeDocumentMoniker": "SimajaAPI.http",
+              "ToolTip": "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.http",
+              "RelativeToolTip": "SimajaAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-21T07:26:36.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\WEB\\web-api-serve\\SimajaAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\WEB\\web-api-serve\\SimajaAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T06:58:50.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersControllers.cs",
+              "DocumentMoniker": "D:\\WEB\\web-api-serve\\SimajaAPI\\Controllers\\UsersControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersControllers.cs",
+              "ToolTip": "D:\\WEB\\web-api-serve\\SimajaAPI\\Controllers\\UsersControllers.cs",
+              "RelativeToolTip": "Controllers\\UsersControllers.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:52:19.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WEB\\web-api-serve\\SimajaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\WEB\\web-api-serve\\SimajaAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:51:19.816Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6eb15cdf-9396-45de-b5f5-901c21c19539",
+        "Display": 0,
+        "X": 187,
+        "Y": 179,
+        "Width": 1578,
+        "Height": 649,
+        "WindowState": 0
+      },
+      "DocumentGroups": []
+    }
+  ]
+}
