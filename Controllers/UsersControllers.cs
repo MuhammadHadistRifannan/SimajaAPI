@@ -2,33 +2,41 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using SimajaAPI; 
+using SimajaAPI;
+using SimajaAPI.EntitySimaja;
 
 namespace MyApp.Namespace
 {
     [Route("api/users")]
     [ApiController]
+
+    [Authorize]
     public class UsersControllers : ControllerBase
     {
         readonly JwtTokenHelper jwtHelper;
+        readonly SimajaDbContext dbContext;
 
-        public UsersControllers(JwtTokenHelper _jwtHelper)
+        public UsersControllers(JwtTokenHelper _jwtHelper , SimajaDbContext _context)
         {
             jwtHelper = _jwtHelper;
+            dbContext = _context;
         }
 
         [HttpPost("login")]
+        [AllowAnonymous]
         public IActionResult Login(LoginForm _login)
         {
             try
             {
-                 if (_login == null) return BadRequest("Missing Parameter email or password"); 
-                if (_login.username == "hadist" && _login.password == "admin123")
+                if (_login == null) return BadRequest("Missing Parameter email or password"); 
+                if (dbContext.Login(_login.username! , _login.password! , out var user))
                 {
-                    var token = jwtHelper.GenerateToken(_login.username);
+                    var token = jwtHelper.GenerateToken(user.id.ToString() , user.username! , user.role.ToString());
                     var response = new ResponseLogin
                     {
-                        username = _login.username ,
+                        id = user.id,
+                        username = user.username,
+                        role = user.roles!.roleName ,
                         access_token = token
                     };
 
@@ -42,23 +50,18 @@ namespace MyApp.Namespace
             }
         }
 
-        [HttpGet("profile/{id}")]
+        [HttpGet("profile")]
         [Authorize]
-        public IActionResult GetProfile(int id)
+        public IActionResult GetProfile()
         {
+            var token = Request.Headers.Authorization.ToString().Substring("Bearer ".Length).Trim();
             try
             {
-                if (id == 1)
-                {
-                    return Ok("users hadist found ");
-                }else
-                {
-                    return NotFound("Users id 1 not found");
-                }
-            }
-            catch (Exception e)
+                var payload = jwtHelper.DecodeToken(token);
+                return Ok(payload);
+            }catch (Exception e)
             {
-                return Unauthorized("You must be Authorized first");
+                return StatusCode(407, e.Message);
             }
         }
     }
@@ -71,7 +74,9 @@ namespace MyApp.Namespace
 
     public class ResponseLogin
     {
+        public int? id { get; set; }
         public string? username { get; set; }
+        public string? role { get; set; }
         public string? access_token { get; set; }
     }
 }

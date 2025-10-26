@@ -1,36 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.csproj": {}
+    "D:\\hadist-project\\SimajaAPI\\SimajaAPI.csproj": {}
   },
   "projects": {
-    "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.csproj": {
+    "D:\\hadist-project\\SimajaAPI\\SimajaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.csproj",
+        "projectUniqueName": "D:\\hadist-project\\SimajaAPI\\SimajaAPI.csproj",
         "projectName": "SimajaAPI",
-        "projectPath": "D:\\WEB\\web-api-serve\\SimajaAPI\\SimajaAPI.csproj",
-        "packagesPath": "C:\\Users\\Ipanjabar\\.nuget\\packages\\",
-        "outputPath": "D:\\WEB\\web-api-serve\\SimajaAPI\\obj\\",
+        "projectPath": "D:\\hadist-project\\SimajaAPI\\SimajaAPI.csproj",
+        "packagesPath": "C:\\Users\\acera\\.nuget\\packages\\",
+        "outputPath": "D:\\hadist-project\\SimajaAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ipanjabar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\acera\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -47,12 +41,26 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -78,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
