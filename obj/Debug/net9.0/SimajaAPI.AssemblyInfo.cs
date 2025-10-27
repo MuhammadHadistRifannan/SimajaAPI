@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimajaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84a6611b13a32255cb39fb3b3bed559a56555c87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0e2ba2e082cfe942fdfca885f53c1e1f11be7c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimajaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimajaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

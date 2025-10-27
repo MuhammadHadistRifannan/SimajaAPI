@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using SimajaAPI;
 using SimajaAPI.EntitySimaja;
 
@@ -31,10 +32,11 @@ namespace MyApp.Namespace
                 if (_login == null) return BadRequest("Missing Parameter email or password"); 
                 if (dbContext.Login(_login.username! , _login.password! , out var user))
                 {
-                    var token = jwtHelper.GenerateToken(user.id.ToString() , user.username! , user.role.ToString());
+                    var guid = Guid.NewGuid().ToString();
+                    var token = jwtHelper.GenerateToken(guid , user.username! , user.role.ToString());
                     var response = new ResponseLogin
                     {
-                        id = user.id,
+                        userId = guid,
                         username = user.username,
                         role = user.roles!.roleName ,
                         access_token = token
@@ -52,6 +54,7 @@ namespace MyApp.Namespace
 
         [HttpGet("profile")]
         [Authorize]
+        [EnableRateLimiting("fixed")]
         public IActionResult GetProfile()
         {
             var token = Request.Headers.Authorization.ToString().Substring("Bearer ".Length).Trim();
@@ -74,7 +77,7 @@ namespace MyApp.Namespace
 
     public class ResponseLogin
     {
-        public int? id { get; set; }
+        public string? userId { get; set; }
         public string? username { get; set; }
         public string? role { get; set; }
         public string? access_token { get; set; }
